@@ -17,11 +17,6 @@ An end-to-end Movie Recommendation Engine built from the ground up, utilizing co
 ## 📌 Project Overview
 With the immense growth of streaming services, navigating through vast content libraries can be overwhelming for users. This project implements a scalable machine learning recommendation system that uncovers hidden relationships between user historical ratings and movie features to serve personalized content.
 
-* **Course Certification:** Executive PG Certification in Data Science and Artificial Intelligence
-* **Organization:** Intellipaat (Associated with iHub Divyasampark, IIT Roorkee)
-* **Developed By:** Anurag Srivastva
-* **Development Environment:** Google Colab
-
 ---
 
 ## 🛠️ Tech Stack & Concepts
