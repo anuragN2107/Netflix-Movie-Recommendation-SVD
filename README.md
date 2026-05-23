@@ -1,7 +1,7 @@
 # Netflix Movie Recommendation System Using SVD
 
 <p align="center">
-  <img src="[https://images.unsplash.com/photo-1574375927938-d5a98e8edd86?q=80&w=1200&auto=format&fit=crop" alt="Netflix Streaming Interface" width="100%](https://mattcraig.substack.com/p/a-no-holds-barred-ranking-of-the)">
+  <img src="[[https://images.unsplash.com/photo-1574375927938-d5a98e8edd86?q=80&w=1200&auto=format&fit=crop" alt="Netflix Streaming Interface" width="100%](https://mattcraig.substack.com/p/a-no-holds-barred-ranking-of-the)](https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940)">
 </p>
 
 <p align="center">
