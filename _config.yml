@@ -1,0 +1,18 @@
+# 🎬 Netflix Theme Engine Configuration
+theme: jekyll-theme-midnight
+
+# Repository & Global Branding
+title: "🎬 Netflix Movie Recommendation System"
+description: "Advanced Predictive Personalization & Latent Factor Matrix Decomposition"
+
+# Core Application Metadata & Brand Parameters
+netflix_brand:
+  primary_color: "#E50914"       # Corporate Netflix Red
+  primary_dark: "#B20710"        # Symbol Accent Crimson
+  surface_background: "#000000"  # Cinematic True Black
+  typography_light: "#FFFFFF"    # Primary White Text
+  logo_assets: "https://brand.netflix.com/en/assets/logos/"
+
+# Layout Behaviors
+show_downloads: false
+google_analytics: ""
