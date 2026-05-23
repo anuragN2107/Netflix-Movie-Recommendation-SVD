@@ -1,10 +1,6 @@
 # Netflix Movie Recommendation System Using SVD
 
 <p align="center">
-  <img src="[[https://images.unsplash.com/photo-1574375927938-d5a98e8edd86?q=80&w=1200&auto=format&fit=crop" alt="Netflix Streaming Interface" width="100%](https://mattcraig.substack.com/p/a-no-holds-barred-ranking-of-the)](https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940)">
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Platform-Google%20Colab-orange?style=flat-square&logo=googlecolab" alt="Google Colab">
   <img src="https://img.shields.io/badge/Language-Python-blue?style=flat-square&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Algorithm-SVD-red?style=flat-square" alt="SVD">
