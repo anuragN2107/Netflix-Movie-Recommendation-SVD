@@ -1,70 +1,51 @@
-# Netflix Movie Recommendation System Using SVD
+# 🎬 Netflix Movie Recommendation Engine (SVD)
+===
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Google%20Colab-orange?style=flat-square&logo=googlecolab" alt="Google Colab">
-  <img src="https://img.shields.io/badge/Language-Python-blue?style=flat-square&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Algorithm-SVD-red?style=flat-square" alt="SVD">
-</p>
+![Python](https://img.shields.io/badge/Python-3.8+-E50914?style=for-the-badge&logo=python&logoColor=white)
+![Framework](https://img.shields.io/badge/Algorithm-SVD%20%2F%20Matrix%20Factorization-black?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Metrics-RMSE%20%2F%20MAE-E50914?style=for-the-badge)
 
-An end-to-end Movie Recommendation Engine built from the ground up, utilizing collaborative filtering and Singular Value Decomposition (SVD) to predict user choices and optimize platform interaction.
-
----
-
-## 📌 Project Overview
-With the immense growth of streaming services, navigating through vast content libraries can be overwhelming for users. This project implements a scalable machine learning recommendation system that uncovers hidden relationships between user historical ratings and movie features to serve personalized content.
+> **System Status:** Recommendation matrix fully optimized. This repository contains an end-to-end Machine Learning pipeline utilizing Singular Value Decomposition (SVD) to combat the data sparsity problem and predict highly accurate user-movie rating vectors.
 
 ---
 
-## 🛠️ Tech Stack & Concepts
-* **Languages & Environments:** Python, Google Colab
-* **Key Methodology:** Collaborative Filtering, Matrix Factorization
-* **Algorithm:** Singular Value Decomposition (SVD)
-* **Evaluation Metrics:** Root Mean Squared Error (RMSE), Mean Absolute Error (MAE)
+## 🚀 Live Environment Hub
+
+| Production Asset | Interface Access Link | Deployment Status |
+| :--- | :--- | :--- |
+| **🤖 Model Engine** | (https://github.com/anuragN2107/Netflix-Movie-Recommendation-SVD/blob/main/Capstone_Project(Netflix).ipynb) | `● OPERATIONAL` |
+| **📑 Technical Brief** | (https://github.com/anuragN2107/Netflix-Movie-Recommendation-SVD/blob/main/Netflix-Recommendation-Engine-Project_Report.docx) | `● VERIFIED` |
+| **🗃️ Training Matrix** | (https://drive.google.com/drive/folders/1T4kugstkoC8PJIRq9FCtIpHdlySXjpvG) | `● SECURE` |
 
 ---
 
-## 📊 Dataset Description
-The project leverages a large-scale dataset comprised of two key components:
-1. **Ratings Dataset (`combined.txt`):** Over 24,058,263 rows containing `Customer ID`, `Ratings` (1-5 stars), and `Movie ID`.
-2. **Movie Metadata (`movie_titles.csv`):** 17,770 rows detailing `Movie ID`, `Movie Name`, and `Year of Release`.
+## 🧠 Architectural Overview
 
-### Data Preprocessing & Thresholds
-To ensure computational feasibility and eliminate extreme sparsity, strict filtering limits were introduced:
-* **Minimum threshold per movie:** 1,798 ratings.
-* **Minimum threshold per customer:** 52 movie ratings.
-* Final processed subset resulted in **4,499 unique movies** and **470,758 unique customers**.
+### 🍿 1. Matrix Factorization Pipeline
+* **Dimensionality Reduction:** Resolved high-dimensional user-item interaction matrices into low-rank dense latent spaces using **Singular Value Decomposition (SVD)**.
+* **Sparsity Mitigation:** Addressed the massive missing-rating issue typical of large-scale streaming catalogs by capturing underlying user preferences and movie features.
 
----
-
-## 🧮 How it Works: SVD Architecture
-The system builds a highly sparse **User-Item Matrix** ($R$) which is factorized using SVD mathematically represented as:
-
-$$R \approx U \Sigma V^T$$
-
-Where:
-* $U$ represents the **User Latent Feature matrix** ($m \times k$).
-* $\Sigma$ is a diagonal matrix mapping the **strength of each latent feature** ($k \times k$).
-* $V^T$ represents the **Item Latent Feature matrix** ($k \times n$).
-
-Missing movie ratings are predicted via the dot product of these lower-dimensional feature vectors:
-$$\hat{R}_{ui} = U_{u} \cdot \Sigma \cdot V_{i}^{T}$$
+### 📐 2. Algorithmic Optimization
+* **Mathematical Optimization:** Implemented bias terms to account for individual user rating tendencies (e.g., critical vs. lenient raters) and inherent movie popularity shifts.
+* **Hyperparameter Tuning:** Fine-tuned the learning rate ($\gamma$) and regularization parameter ($\lambda$) to optimize performance metrics and prevent model overfitting.
 
 ---
 
-## 📈 Model Performance & Evaluation
-Using a **4-fold cross-validation** scheme, the SVD model achieved remarkably low error metrics, showcasing high stability and accuracy:
+## 📊 Model Evaluation Summary
 
-| Metric | Value Range |
-| :--- | :--- |
-| **RMSE** | 0.988 - 1.004 |
-| **MAE** | 0.786 - 0.805 |
-
-### Key Takeaways
-* **Efficiency:** Training time was highly optimized and computationally practical for a 24M dataset.
-* **Scalability:** The framework seamlessly captures high-dimensional interactions into lightweight vectors.
+| Algorithm Component | Primary Metric Target | Optimization Strategy |
+| :--- | :--- | :--- |
+| **SVD Baseline** | Minimize Root Mean Squared Error (RMSE) | Stochastic Gradient Descent (SGD) |
+| **Latent Factors ($k$)** | Capture Implicit User Preferences | Matrix Rank Decomposition |
+| **Regularization ($\lambda$)** | Control Overfitting on Sparse Data | L2 Ridge Penalization |
 
 ---
 
-## 🚀 Quick Links
-* 📓 **Notebook:** [View Google Colab Notebook](https://colab.research.google.com/drive/1bgVrGUaPsAbgMmGfxV_QMw9bnZghjUd6#scrollTo=fqVaQ7biGg7e)
-* 📄 **Presentation Document:** [Project PDF Details](https://github.com/anuragN2107/Netflix-Movie-Recommendation-SVD/blob/main/Netflix-Recommendation-Engine-Project_Report.docx)
+## 🛠️ Data Science Stack
+* **Language Environment:** Python 3.8+ 🐍
+* **Recommendation Framework:** Surprise Scikit / Custom SVD Engines
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization Matrix:** Seaborn Cinematic Palettes, Matplotlib
+
+---
+*Developed as part of an advanced machine learning portfolio framework.*
